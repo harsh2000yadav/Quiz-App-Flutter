@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './question.dart';
 import './answer.dart';
 import './quiz.dart';
-
+import './result.dart';
 void main() => {runApp(MyApp())};
 
 class MyApp extends StatefulWidget {
@@ -15,7 +15,14 @@ class _MyAppState extends State<MyApp> {
   var _qi=0;
   var _tScore=0;
 
-  void counterFn(int score){
+  void _reset(){
+    setState(() {
+      _qi=0;
+      _tScore=0;
+    });
+  }
+
+  void _counterFn(int score){
     setState(() {
          _qi+=1;
     _tScore +=score;
@@ -75,7 +82,8 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: Colors.green,
           title: Text('Geography Quiz'),
         ), 
-        body: ,
+        body: _qi<_questions.length? Quiz(questions: _questions, qi: _qi, counterFn: _counterFn,)
+        :Result(_tScore, _reset),
       )
     );
   }
