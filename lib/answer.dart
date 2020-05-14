@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import './question.dart';
-
 
 class Answer extends StatelessWidget {
   final Function counterFn;
