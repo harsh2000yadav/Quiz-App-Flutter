@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
           {'text': 'USA', 'score': 0}
         ]
       
-      }
+      },
           {
         'questionText': 'Biggest country among the following',
         'answers': [
@@ -82,7 +82,7 @@ class _MyAppState extends State<MyApp> {
           {'text': 'USA', 'score': 0}
         ]
       
-      }
+      },
        {
         'questionText': 'Biggest country among the following',
         'answers': [
@@ -92,7 +92,16 @@ class _MyAppState extends State<MyApp> {
           {'text': 'USA', 'score': 0}
         ]
       
-      }
+      },
+         {
+        'questionText': 'How many countries are there in the world?',
+        'answers': [
+          {'text': '180', 'score': 0},
+          {'text': '196', 'score': 1},
+          {'text': '206', 'score': 0},
+          {'text': '194', 'score': 0}
+        ]
+      },
     ];
 
 
