@@ -83,6 +83,16 @@ class _MyAppState extends State<MyApp> {
         ]
       
       }
+       {
+        'questionText': 'Biggest country among the following',
+        'answers': [
+          {'text': 'India', 'score': 0},
+          {'text': 'China', 'score': 1},
+          {'text': 'Mexico', 'score': 0},
+          {'text': 'USA', 'score': 0}
+        ]
+      
+      }
     ];
 
 
